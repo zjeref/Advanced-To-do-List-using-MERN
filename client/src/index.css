@@ -22,11 +22,11 @@ code {
 }
 
 .login-input {
-  @apply border-2 w-full px-2 py-1 rounded-md focus:outline-none border-blue-600 shadow-md shadow-slate-500
+  @apply border-2 w-full px-2 py-1 rounded-md focus:outline-none border-blue-600 shadow-md shadow-slate-500 text-2xl
 }
 
 .error-validation {
-  @apply border-red-500 border-2
+  @apply border-red-500 border-4
 }
 
 .nav-buttons {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Landing from '../Pages/Landing'
+
 
 import Cookies from 'js-cookie'
 import axios from 'axios'
@@ -21,13 +21,12 @@ const Protected = (props) => {
             return;
         }
 
-        console.log(authToken)
         const headers = {
             'Authorization': `Bearer ${authToken}`
         };
         getUser(headers)
 
-    }, [authToken])
+    }, [authToken, navigate]);
 
     const getUser = async (headers) => {
         await axios.get("http://localhost:4000/api/me", { headers })

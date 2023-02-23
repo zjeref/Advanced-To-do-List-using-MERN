@@ -14,7 +14,7 @@ const User = ({ userData }) => {
     const [tasks, setTasks] = useState([])
     useEffect(() => {
         fetchData();
-    }, [userData])
+    }, [userData]);
 
     async function fetchData() {
         try {
@@ -40,7 +40,6 @@ const User = ({ userData }) => {
     //Toggling dashboard
     const [isDashboardOpen, setDashboardOpen] = useState(false)
     const manageDashboard = () => {
-        console.log("dashboard click")
         setDashboardOpen(!isDashboardOpen)
     }
 

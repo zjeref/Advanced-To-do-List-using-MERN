@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import image from './assets/image.png'
 
 
@@ -20,10 +20,10 @@ const Landing = () => {
                         </div>
                         <div className='flex flex-col'>
                             <Link to="/signup">
-                                <button className="bg-indigo-700 w-32 py-2 text-white mb-3 text-lg shadow-lg shadow-slate-400">Join Now</button>
+                                <button className="bg-indigo-700 w-32 py-2 text-white mb-3 text-xl shadow-lg shadow-slate-400 ">Join Now</button>
                             </Link>
                             <Link to="/login">
-                                <span className="text-blue-600 cursor-pointer">Already have an account?</span>
+                                <span className="text-blue-600 cursor-pointer text-xl">Already have an account?</span>
                             </Link>
                         </div>
                     </div>

@@ -36,11 +36,11 @@ const Signin = () => {
             <div className="flex justify-center items-center">
                 <div className="max-w-4xl container px-[7%] py-[3%] bg-white h-full flex md:flex-row flex-col justify-between w-full flex-wrap shadow-slate-500 shadow-xl">
                     <div className="w-1/2 overflow-hidden flex justify-end sr-only md:not-sr-only">
-                        <img src={image} alt="" className='md:w-[25vh] scale-x-[-1]' />
+                        <img src={image} alt="" className='w-[20vh] scale-x-[-1]' />
                     </div>
                     <div className="md:w-1/2 flex flex-col justify-center space-y-7">
                         <h3 className='md:text-3xl text-2xl'>Sign in</h3>
-                        <form onSubmit={submitData} className="form-horizontal md:text-2xl">
+                        <form onSubmit={submitData} className="form-horizontal text-2xl">
                             <div className="space-y-3 mb-4">
                                 <div>
                                     <label htmlFor="Email" className='ml-2'>Email Address</label>
@@ -52,7 +52,7 @@ const Signin = () => {
                                 </div>
                             </div>
                             <div className="w-full flex flex-col mb-7">
-                                <button type='submit' className='px-4 py-2 mt-4  bg-indigo-700 text-white rounded-md w-3/5 shadow-xl'>Submit</button>
+                                <button type='submit' className='px-4 py-2 mt-4  bg-indigo-500 text-white rounded-md w-3/5 shadow-lg shadow-slate-500 border-indigo-900 hover:border-2 active:bg-indigo-900'>Submit</button>
                                 <span className='mt-2 text-blue-600 cursor-pointer'>Forgot your password?</span>
                             </div>
                         </form>
